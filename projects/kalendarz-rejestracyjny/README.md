@@ -1,21 +1,44 @@
 # Kalendarz rejestracyjny WordPress
 
-Rezerwacje, dostępność, powiadomienia, panel pacjenta i terapeuty.
+> **Case study:** system rezerwacji wizyt dla gabinetu  
+> **Stan:** rozwijany projekt — wersja 1.25.5  
+> **Obszary:** WordPress • PHP • JavaScript • rezerwacje • role użytkowników • powiadomienia
 
-**Stan:** Rozwijana wtyczka; paczka 1.25.5. Panel terapeuty jest modułem tego projektu.
+## Problem
 
-## Problem i rozwiązanie
+Prosty kalendarz nie wystarcza, gdy trzeba jednocześnie uwzględnić dostępność terapeuty, długość usług, zajęte terminy, różne rodzaje wizyt oraz późniejszą obsługę rezerwacji.
 
-Obsługa wizyt wymaga uwzględnienia grafiku, długości usług i istniejących rezerwacji. System łączy dostępność, rejestrację i powiadomienia.
+## Moje rozwiązanie
 
-## Mój udział
+Rozwijam własną wtyczkę WordPress, która łączy najważniejsze elementy procesu:
 
-Określanie wymagań i procesu, rozwijanie projektu z pomocą AI, praca z kolejnymi wersjami oraz dopracowywanie rozwiązania. Zakres wykonania opisuje stan powyżej; funkcje zaplanowane nie są przedstawiane jako gotowe.
+- prezentację dostępnych terminów,
+- rezerwację wizyty przez pacjenta,
+- panel terapeuty,
+- obsługę statusów wizyty,
+- powiadomienia,
+- zarządzanie i zmianę rezerwacji.
 
-## Materiały publiczne
+Panel terapeuty jest częścią tego samego systemu, a nie osobnym projektem.
 
-Ten opis przedstawia zakres projektu. Pełne źródła i konfiguracja wdrożenia pozostają poza publicznym portfolio.
+## Moja rola
 
-## Weryfikacja i dalszy rozwój
+Definiuję logikę procesu i zachowanie systemu z punktu widzenia pacjenta oraz terapeuty. Kolejne wersje powstają na podstawie realnych scenariuszy: rezerwacja, przełożenie, odwołanie, zamknięcie wizyty czy zachowanie interfejsu na telefonie.
 
-Stan projektu opisany powyżej odróżnia istniejącą implementację od planowanych funkcji. Pełne testy integracyjne i bezpieczeństwa nie są potwierdzone przez tę prezentację.
+AI wspiera mnie przy implementacji i debugowaniu, natomiast wymagania, reguły procesu i decyzje dotyczące działania systemu wynikają z mojej analizy problemu i testów.
+
+## Najciekawsze wyzwania
+
+- zapobieganie konfliktom terminów,
+- czytelny interfejs tygodniowego kalendarza,
+- różne akcje zależne od statusu rezerwacji,
+- responsywność na telefonach i komputerach,
+- utrzymanie spójności między widokiem pacjenta i terapeuty.
+
+## Co ten projekt pokazuje
+
+Projekt pokazuje nie tylko tworzenie funkcji WordPress, ale przede wszystkim pracę nad **procesem biznesowym, stanami systemu i przypadkami brzegowymi**.
+
+Pełne źródła oraz konfiguracja wdrożenia pozostają prywatne.
+
+[← Wróć do portfolio](../../README.md)
