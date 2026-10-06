@@ -1,21 +1,40 @@
-# HelmetFit AI / Virtual Helmet Try-On
+# HelmetFit — Virtual Helmet Try-On
 
-Przymierzanie kasku 2D w przeglądarce, canvas, WooCommerce.
+> **Case study:** prototyp wirtualnego przymierzania kasku w sklepie internetowym  
+> **Stan:** prototyp 0.1.0  
+> **Obszary:** JavaScript • Canvas • WooCommerce • e-commerce • prototypowanie
 
-**Stan:** Prototyp 0.1.0. Automatyczne landmarki i provider AI były planowane.
+## Problem
 
-## Problem i rozwiązanie
+Przy zakupie kasku online klient widzi produkt, ale trudno mu ocenić, jak będzie wyglądał na jego głowie. Chciałem sprawdzić, czy da się stworzyć prostą funkcję „przymierz”, działającą bezpośrednio na stronie produktu.
 
-Klient sklepu chce zobaczyć wygląd kasku przed zakupem. Prototyp nakłada grafikę 2D na zdjęcie lokalnie w przeglądarce i pozwala poprawić położenie.
+## Prototyp
 
-## Mój udział
+Powstała pierwsza wersja, która:
 
-Określanie wymagań i procesu, rozwijanie projektu z pomocą AI, praca z kolejnymi wersjami oraz dopracowywanie rozwiązania. Zakres wykonania opisuje stan powyżej; funkcje zaplanowane nie są przedstawiane jako gotowe.
+- pozwala pracować ze zdjęciem użytkownika w przeglądarce,
+- nakłada grafikę kasku 2D przy użyciu canvas,
+- pozwala skorygować położenie nakładki,
+- została pomyślana jako funkcja możliwa do połączenia z WooCommerce.
 
-## Materiały publiczne
+## Dlaczego to prototyp
 
-Ten opis przedstawia zakres projektu. Pełne źródła i konfiguracja wdrożenia pozostają poza publicznym portfolio.
+Wersja 0.1.0 nie jest przedstawiana jako gotowy system AI. Automatyczne wykrywanie punktów twarzy/głowy oraz provider AI były kierunkiem dalszego rozwoju, a nie ukończoną funkcją.
 
-## Weryfikacja i dalszy rozwój
+To rozróżnienie jest dla mnie ważne: w portfolio pokazuję to, co rzeczywiście powstało, oddzielnie od pomysłów na kolejne wersje.
 
-Stan projektu opisany powyżej odróżnia istniejącą implementację od planowanych funkcji. Pełne testy integracyjne i bezpieczeństwa nie są potwierdzone przez tę prezentację.
+## Moja rola
+
+Zdefiniowałem problem e-commerce, sposób interakcji użytkownika i zakres pierwszego MVP. AI wykorzystałem jako wsparcie przy budowie prototypu i analizie kolejnych możliwości technicznych.
+
+## Co ten projekt pokazuje
+
+- szybkie przejście od pomysłu do działającego MVP,
+- pracę z JavaScript i canvas,
+- myślenie o integracji funkcji z e-commerce,
+- świadome ograniczenie pierwszej wersji,
+- umiejętność odróżnienia prototypu od gotowego produktu.
+
+Pełne źródła pozostają prywatne.
+
+[← Wróć do portfolio](../../README.md)
