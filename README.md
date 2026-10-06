@@ -1,47 +1,134 @@
-# Dariusz Kaczor — aplikacje i automatyzacje z pomocą AI
+# Dariusz Kaczor — AI, automatyzacje i praktyczne aplikacje
 
-Projektuję i rozwijam narzędzia dla stron internetowych, gabinetów, edukacji i codziennej pracy. AI wykorzystuję do projektowania, programowania, testowania i analizy błędów. Portfolio obejmuje rozwijane aplikacje, prototypy oraz koncepcje interfejsów; ich stan jest opisany przy każdym projekcie.
+Tworzę narzędzia, które rozwiązują konkretne problemy: automatyzują formularze i raporty, obsługują rezerwacje, pomagają planować zastępstwa w szkole oraz usprawniają pracę stron WordPress.
 
-## Wybrane projekty
+**AI traktuję jako narzędzie pracy** — wykorzystuję je do projektowania rozwiązań, programowania, analizy błędów, testowania i kolejnych iteracji. Sam definiuję problem, wymagania i logikę działania oraz sprawdzam rezultat.
 
-- [DiagnozaLab](projects/diagnozalab/) — automatyzacja formularzy, punktacji, raportów i przekazywania wyników.
-- [Kalendarz rejestracyjny](projects/kalendarz-rejestracyjny/) — obsługa dostępności i rezerwacji w WordPressie.
-- [Proste Popupy](projects/proste-popupy/) — kreator kampanii, testy A/B i pomiar reakcji.
-- [AI Planista Szkoły](projects/ai-planista/) — zastępstwa, reguły organizacyjne i eksport danych.
-- [HelmetFit](projects/helmetfit/) — prototyp przymierzania kasków 2D w WooCommerce.
-- [Terapeuta PRO](projects/terapeuta-pro/) — prototyp lokalnej aplikacji PWA na iPhone.
+> To publiczna, bezpieczna wersja portfolio. Pełne źródła projektów pozostają prywatne. Poniżej pokazuję opisy, makiety i krótkie przykłady kodu demonstracyjnego.
 
-## Katalog projektów
+## ⭐ 5 projektów, od których warto zacząć
 
-| Projekt | Zakres | Stan |
+### 1. [DiagnozaLab / Formularze Pro Center](projects/diagnozalab/)
+**Problem:** ręczne zbieranie odpowiedzi, obliczanie wyników i przygotowywanie materiałów dla specjalisty.
+
+**Rozwiązanie:** własna wtyczka WordPress automatyzująca formularze, punktację i generowanie raportów, z pomocniczym wykorzystaniem API AI do opisu wyników.
+
+**Co pokazuje:** WordPress • PHP • automatyzacja procesu • formularze • raporty • integracja API • iteracyjne rozwijanie produktu
+
+**Stan:** rozwijany projekt — wersja 1.33.38.
+
+---
+
+### 2. [Kalendarz rejestracyjny WordPress](projects/kalendarz-rejestracyjny/)
+**Problem:** zarządzanie terminami, dostępnością terapeutów i rezerwacjami wymaga wielu ręcznych czynności.
+
+**Rozwiązanie:** system rezerwacji z panelem pacjenta i terapeuty, dostępnością terminów, powiadomieniami i obsługą wizyt.
+
+**Co pokazuje:** WordPress • logika rezerwacji • role użytkowników • UI/UX • rozwój na podstawie testów
+
+**Stan:** rozwijany projekt — wersja 1.25.5.
+
+---
+
+### 3. [AI Planista Szkoły](projects/ai-planista/)
+**Problem:** układanie zastępstw wymaga uwzględnienia obecności nauczycieli, klas, kosztów i wielu reguł organizacyjnych.
+
+**Rozwiązanie:** lokalna aplikacja wspierająca planowanie i zastępstwa, wykorzystująca SQLite i OR-Tools oraz eksport danych.
+
+**Co pokazuje:** Python • Streamlit • SQLite • OR-Tools • XLSX/CSV • modelowanie reguł biznesowych
+
+**Stan:** działająca lokalna wersja 1.3; dalszy rozwój projektu.
+
+---
+
+### 4. [Proste Popupy](projects/proste-popupy/)
+**Problem:** potrzeba prostego zarządzania kampaniami na stronie bez dokładania wielu zewnętrznych narzędzi.
+
+**Rozwiązanie:** własna wtyczka WordPress z kreatorem kampanii, CTA, testami A/B, newsletterem i analityką.
+
+**Co pokazuje:** WordPress • PHP • JavaScript • analityka • testy A/B • rozwój własnej wtyczki
+
+**Stan:** rozwijany projekt — migawka 1.9.0-beta.5.
+
+---
+
+### 5. [HelmetFit — Virtual Helmet Try-On](projects/helmetfit/)
+**Problem:** klient sklepu internetowego nie może łatwo ocenić wyglądu kasku przed zakupem.
+
+**Rozwiązanie:** prototyp przymierzania kasku 2D bezpośrednio w przeglądarce z wykorzystaniem canvas i integracji z WooCommerce.
+
+**Co pokazuje:** JavaScript • Canvas • WooCommerce • prototypowanie funkcji e-commerce
+
+**Stan:** prototyp 0.1.0; automatyczne landmarki i provider AI były planowane.
+
+## 🧰 Technologie i obszary, z którymi pracuję
+
+**WordPress i web:** PHP, JavaScript, HTML/CSS, własne wtyczki i motywy, formularze, rezerwacje, WooCommerce.
+
+**Aplikacje i dane:** Python, Streamlit, SQLite, OR-Tools, XLSX/CSV, podstawy Next.js/Prisma i SwiftUI.
+
+**AI i automatyzacja:** wykorzystanie modeli AI w procesie tworzenia oprogramowania, integracje API, analiza błędów, prototypowanie, automatyzacja powtarzalnych procesów.
+
+**Narzędzia:** GitHub, lokalne środowisko developerskie, testowanie kolejnych wersji i praca iteracyjna.
+
+## Jak pracuję
+
+1. Rozpoznaję rzeczywisty problem użytkownika i opisuję reguły procesu.
+2. Rozbijam rozwiązanie na funkcje i przygotowuję pierwszą działającą wersję.
+3. Korzystam z AI jako wsparcia przy kodzie, analizie błędów i szukaniu rozwiązań.
+4. Testuję efekt w praktyce, znajduję problemy i poprawiam kolejne wersje.
+5. Oddzielam rozwiązania działające od prototypów i pomysłów, których jeszcze nie zweryfikowałem.
+
+Nie przedstawiam AI jako autora projektu. Najważniejsze są dla mnie **rozwiązanie problemu, logika procesu, testowanie i doprowadzanie pomysłu do użytecznej wersji**.
+
+## Wszystkie projekty
+
+| Projekt | Co powstało | Stan |
 | --- | --- | --- |
-| [DiagnozaLab / Formularze Pro Center](projects/diagnozalab/) | Kwestionariusze, punktacja, raporty, pomocniczy opis API AI. | Rozwijana wtyczka; paczka 1.33.38. |
-| [Kalendarz rejestracyjny WordPress](projects/kalendarz-rejestracyjny/) | Rezerwacje, dostępność, powiadomienia, panel pacjenta i terapeuty. | Rozwijana wtyczka; paczka 1.25.5. Panel terapeuty jest modułem tego projektu. |
-| [Therapy Booking Manager](projects/therapy-booking-manager/) | Wcześniejsza wtyczka rezerwacji terapeutycznych. | Prototyp MVP; źródła z paczki therapy-booking-manager-mvp.zip. |
-| [Terapeuta PRO na iPhone](projects/terapeuta-pro/) | Lokalna PWA: pacjenci, wizyty, PIN, statusy, ICS i kopie JSON; zaczątek backendu WP. | Prototyp. Trzy paczki to etapy jednego projektu; synchronizacja z backendem niepotwierdzona. |
-| [EMDR Ball / EMDR online](projects/emdr-ball/) | Narzędzie z poruszającą się kulą/punktem; plany rozbudowy platformy. | Mała wtyczka/prototyp. Wideo i synchronizacja terapeuta–klient były planowane. |
-| [HelmetFit AI / Virtual Helmet Try-On](projects/helmetfit/) | Przymierzanie kasku 2D w przeglądarce, canvas, WooCommerce. | Prototyp 0.1.0. Automatyczne landmarki i provider AI były planowane. |
-| [GymPlan AI / Trening Siłownia](projects/gymplan-ai/) | PWA treningowa, profil, siłownie, sprzęt, baza ćwiczeń. | Dokumentacja i fundament Next.js/Prisma. Paczka wymaga instalacji zależności i sprawdzenia; generator treningów niepotwierdzony jako gotowy. |
-| [Dieta AI](projects/dieta-ai/) | Import bazy produktów, kalkulator posiłków, lista zakupów i walidacja JSON. | Prototyp 0.1; automatyczny generator API niepodłączony. |
-| [Moje Kalorie na iPhone](projects/moje-kalorie/) | Lokalna PWA do pracy z kaloriami i dziennikiem. | Prototyp MVP, dane localStorage; rozbudowa API/AI/natywna iOS planowana. |
-| [PDFReaderMac — czytanie PDF na głos](projects/pdf-reader-mac/) | Szkielet SwiftUI/PDFKit/AVSpeechSynthesizer z głosami polskimi. | Pliki źródłowe do projektu Xcode. OCR i eksport audio planowane. |
-| [Proste Popupy](projects/proste-popupy/) | Kreator kampanii, CTA, testy A/B, newsletter, analityka. | Rozwijana wtyczka; migawka 1.9.0-beta.5. |
-| [Żywieniowe ABC — Popupy](projects/zywieniowe-abc-popupy/) | Osobna wtyczka popupów z regułami i obsługą klawiatury. | Paczka 1.0.0; odrębna implementacja od Proste Popupy. |
-| [Fundacja Formeds Ambasador](projects/formeds-ambasador/) | Landing page, ankieta, zgłoszenia, powiadomienia, CSV i liczniki kliknięć. | Wtyczka WordPress; wdrożenie niezweryfikowane. |
-| [Motyw strony DiagnozaLab](projects/motyw-diagnozalab/) | Motyw premium, edycja strony głównej, logo, nagłówka i układu. | Motyw WordPress; ostatnia odnaleziona paczka standard-wp-editing. |
-| [Psycholog — Spokojny Gabinet](projects/psycholog-spokojny-gabinet/) | Motyw WordPress dla gabinetu psychologicznego. | Motyw WordPress; paczka widoczne-funkcje. |
-| [Plan lekcji — arkusze i makra](projects/plan-lekcji-makra/) | Filtrowanie, legendy, dymki i panel nauczyciela w Excel/VBA. | Arkusze XLSX oraz pakiety kodu makr; oddzielne narzędzie od aplikacji Python. |
-| [AI Planista Szkoły](projects/ai-planista/) | Planowanie i zastępstwa, SQLite, OR-Tools, eksport. | Lokalna aplikacja 1.3; osobna paczka startowa na macOS. 1.4 zapowiedziana, nieodnaleziona. |
-| [Aplikacja do badania uwagi](projects/uwaga-makieta/) | Makieta mobilnego formularza z pytaniem i odpowiedziami. Nie odnaleziono osobnego kodu aplikacji. | Koncepcja / makieta |
-| [Strona Fundacji Żywieniowe ABC](projects/fundacja-strona/) | Koncepcja przebudowy strony: wybór obszaru wsparcia, oferta i czytelna nawigacja. Nie odnaleziono paczki implementacji tej makiety. | Koncepcja / makieta |
-| [Montessori w Boguchwale — nowa strona](projects/montessori-strona/) | Koncepcja nowej szaty strony szkoły: rekrutacja, sekcje dla rodziców i aktualności. To propozycja wizualna, nie ukończona strona ani zlecenie potwierdzone przez szkołę. | Koncepcja / makieta |
+| [DiagnozaLab / Formularze Pro Center](projects/diagnozalab/) | Formularze, punktacja, raporty i pomocniczy opis API AI | **Rozwijany** |
+| [Kalendarz rejestracyjny WordPress](projects/kalendarz-rejestracyjny/) | Rezerwacje, dostępność, powiadomienia, panel pacjenta i terapeuty | **Rozwijany** |
+| [Proste Popupy](projects/proste-popupy/) | Kreator kampanii, CTA, A/B, newsletter i analityka | **Rozwijany** |
+| [AI Planista Szkoły](projects/ai-planista/) | Planowanie i zastępstwa, SQLite, OR-Tools, eksport | **Lokalna aplikacja 1.3** |
+| [HelmetFit](projects/helmetfit/) | Przymierzanie kasków 2D w przeglądarce | Prototyp |
+| [Terapeuta PRO](projects/terapeuta-pro/) | PWA: pacjenci, wizyty, PIN, ICS i kopie JSON | Prototyp |
+| [Therapy Booking Manager](projects/therapy-booking-manager/) | Wcześniejszy system rezerwacji terapeutycznych | Prototyp MVP |
+| [EMDR Ball](projects/emdr-ball/) | Narzędzie z poruszającym się punktem/kulą | Prototyp |
+| [GymPlan AI](projects/gymplan-ai/) | Fundament PWA treningowej, Next.js/Prisma | Prototyp |
+| [Dieta AI](projects/dieta-ai/) | Import produktów, kalkulator posiłków i lista zakupów | Prototyp |
+| [Moje Kalorie](projects/moje-kalorie/) | Lokalna PWA do kalorii i dziennika | Prototyp MVP |
+| [PDFReaderMac](projects/pdf-reader-mac/) | SwiftUI/PDFKit/AVSpeechSynthesizer | Szkielet aplikacji |
+| [Żywieniowe ABC — Popupy](projects/zywieniowe-abc-popupy/) | Osobna wtyczka popupów z regułami | Wtyczka 1.0.0 |
+| [Fundacja Formeds Ambasador](projects/formeds-ambasador/) | Landing page, ankieta, CSV i liczniki kliknięć | Wtyczka |
+| [Motyw DiagnozaLab](projects/motyw-diagnozalab/) | Edytowalny motyw WordPress | Motyw |
+| [Psycholog — Spokojny Gabinet](projects/psycholog-spokojny-gabinet/) | Motyw WordPress dla gabinetu | Motyw |
+| [Plan lekcji — arkusze i makra](projects/plan-lekcji-makra/) | XLSX/VBA: filtrowanie, legendy i panel nauczyciela | Narzędzie |
+| [Aplikacja do badania uwagi](projects/uwaga-makieta/) | Mobilna koncepcja formularza | Makieta |
+| [Strona Fundacji Żywieniowe ABC](projects/fundacja-strona/) | Koncepcja przebudowy serwisu | Makieta |
+| [Montessori w Boguchwale](projects/montessori-strona/) | Koncepcja nowej szaty strony szkoły | Makieta |
 
-## Sposób pracy
+## 👀 Makiety
 
-Zaczynam od problemu użytkownika i reguł procesu. Przygotowuję pierwszą wersję, sprawdzam działanie i rozwijam kolejne iteracje. Decyzje projektowe i weryfikacja wyników pozostają częścią mojej pracy także wtedy, gdy korzystam z AI.
+W części projektów znajdują się obrazy pokazujące kierunek interfejsu. Są oznaczone jako **makiety/koncepcje**, a nie gotowe wdrożenia.
 
-## Przykłady podejścia do kodu
+- [GymPlan AI](projects/gymplan-ai/preview.png)
+- [Fundacja Żywieniowe ABC](projects/fundacja-strona/preview.png)
+- [Montessori w Boguchwale](projects/montessori-strona/preview.png)
+- [Aplikacja do badania uwagi](projects/uwaga-makieta/preview.png)
 
-[Trzy krótkie przykłady](examples/) pokazują walidację danych, wykrywanie konfliktów terminów i generowanie anonimowego identyfikatora. Zostały przygotowane na potrzeby portfolio jako uproszczone demonstracje. Nie zawierają algorytmów diagnostycznych ani pełnej implementacji aplikacji.
+## 💻 Przykłady kodu
 
-Publiczna prezentacja zawiera opisy, makiety i przykłady demonstracyjne. Makiety są oznaczone jako koncepcje. Nie deklaruję niezmierzonych wyników biznesowych ani gotowości produkcyjnej prototypów.
+[Folder `examples`](examples/) zawiera trzy krótkie przykłady przygotowane specjalnie do publicznego portfolio:
+
+- walidacja danych wejściowych,
+- wykrywanie konfliktów terminów,
+- generowanie anonimowego identyfikatora.
+
+To uproszczone demonstracje sposobu myślenia. **Nie są fragmentami zawierającymi poufną logikę pełnych projektów.**
+
+---
+
+### Kontakt
+
+Jeśli trafiłeś tutaj z mojego CV lub zgłoszenia rekrutacyjnego, chętnie pokażę więcej szczegółów dotyczących wybranych projektów i opowiem, jak powstawały.
+
+**GitHub:** [kadarek2017-coder](https://github.com/kadarek2017-coder)
