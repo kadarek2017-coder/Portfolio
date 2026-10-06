@@ -1,21 +1,47 @@
 # AI Planista Szkoły
 
-Planowanie i zastępstwa, SQLite, OR-Tools, eksport.
+> **Case study:** lokalna aplikacja wspierająca plan lekcji i zastępstwa  
+> **Stan:** lokalna aplikacja 1.3  
+> **Technologie:** Python • Streamlit • SQLite • OR-Tools • XLSX/CSV • macOS
 
-**Stan:** Lokalna aplikacja 1.3; osobna paczka startowa na macOS. 1.4 zapowiedziana, nieodnaleziona.
+## Problem
 
-## Problem i rozwiązanie
+Zastępstwo za nieobecnego nauczyciela nie sprowadza się do znalezienia wolnej osoby. Trzeba uwzględnić plan lekcji, obecność nauczycieli, kwalifikacje, łączenie klas oraz sposób rozliczania zastępstwa.
 
-Nieobecność nauczyciela wymaga wyszukania zastępstwa i późniejszego rozliczenia. Aplikacja uwzględnia reguły łączenia klas i zapisuje rejestr w SQLite. Optymalizacja korzysta z OR-Tools.
+## Moje rozwiązanie
 
-## Mój udział
+Zbudowałem lokalną aplikację, w której reguły organizacyjne szkoły są zapisane jako logika systemu. Projekt rozwijałem wersjami, dodając m.in.:
 
-Określanie wymagań i procesu, rozwijanie projektu z pomocą AI, praca z kolejnymi wersjami oraz dopracowywanie rozwiązania. Zakres wykonania opisuje stan powyżej; funkcje zaplanowane nie są przedstawiane jako gotowe.
+- import danych XLSX/CSV,
+- kartotekę i dostępność nauczycieli,
+- sale i ograniczenia planu,
+- wyszukiwanie wariantów zastępstw,
+- reguły łączenia wybranych klas,
+- rozróżnienie zastępstw płatnych i niepłatnych,
+- rejestr wykonanych zastępstw,
+- zapis danych w SQLite,
+- eksport wyników.
 
-## Materiały publiczne
+Do problemów optymalizacyjnych wykorzystuję OR-Tools.
 
-Ten opis przedstawia zakres projektu. Pełne źródła i konfiguracja wdrożenia pozostają poza publicznym portfolio.
+## Przykład reguły biznesowej
 
-## Weryfikacja i dalszy rozwój
+Jeżeli nauczyciel jest nieobecny, system powinien najpierw szukać osoby obecnej w szkole i możliwej do wykorzystania w danym czasie. Psycholog, pedagog specjalny lub logopeda mogą w określonym scenariuszu wykonać zastępstwo bez dodatkowego rozliczenia, natomiast zastępstwo nauczyciela może wymagać oznaczenia jako płatne. System musi też rozpoznawać dozwolone łączenia klas.
 
-Stan projektu opisany powyżej odróżnia istniejącą implementację od planowanych funkcji. Pełne testy integracyjne i bezpieczeństwa nie są potwierdzone przez tę prezentację.
+To właśnie takie reguły są sednem projektu.
+
+## Moja rola
+
+Sam rozpisuję reguły i kolejne przypadki użycia, testuję wyniki i rozwijam aplikację wersjami. AI pomaga mi w implementacji, ale model procesu i decyzje dotyczące działania programu wynikają z analizy rzeczywistych potrzeb szkoły.
+
+## Co ten projekt pokazuje
+
+- Python w praktycznym narzędziu,
+- modelowanie złożonych reguł,
+- pracę z danymi XLSX/CSV i SQLite,
+- wykorzystanie optymalizacji zamiast prostego zestawu warunków,
+- rozwijanie aplikacji krok po kroku na podstawie scenariuszy użytkownika.
+
+Pełne źródła pozostają prywatne. Publiczny opis nie zawiera danych szkoły ani nauczycieli.
+
+[← Wróć do portfolio](../../README.md)
